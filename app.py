@@ -150,7 +150,7 @@ st.markdown("---")
 st.subheader("💵 折扣率对利润率的影响")
 
 fig_scatter = px.scatter(filtered, x="discount_percent", y="profit_margin",
-                         color="product_category", opacity=0.3, trendline="ols",
+                         color="product_category", opacity=0.3,
                          labels={"discount_percent": "折扣率 (%)", "profit_margin": "利润率 (%)"})
 st.plotly_chart(fig_scatter, use_container_width=True)
 
