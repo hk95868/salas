@@ -49,10 +49,16 @@ streamlit run app.py
 
 ```
 sales-dashboard/
-├── app.py              # 主程序（看板页面）
-├── sales_data.csv      # 数据集
-├── requirements.txt    # 依赖清单
-└── README.md           # 项目说明
+├── app.py                      # 主程序（页面布局与组装）
+├── components/
+│   ├── __init__.py
+│   ├── data_loader.py          # 数据加载与预处理
+│   ├── aggregations.py         # 聚合计算（月度/品类/区域等）
+│   ├── charts.py               # 图表生成（统一配色与样式）
+│   └── insights.py             # 数据洞察（自动生成业务建议）
+├── sales_data.csv              # 数据集
+├── requirements.txt            # 依赖清单
+└── README.md                   # 项目说明
 ```
 
 ## 📊 数据说明
